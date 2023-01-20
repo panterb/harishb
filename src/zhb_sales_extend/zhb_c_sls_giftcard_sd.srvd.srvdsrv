@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition forZHB_C_SLS_GIFTCARD'
+define service ZHB_C_SLS_GIFTCARD_SD {
+  expose ZHB_C_SLS_GIFTCARD as Giftcard;
+}

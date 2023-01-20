@@ -1,0 +1,17 @@
+extension using interface i_salesordertp
+implementation in class zbp_hb_sls_coupon_usage unique;
+
+extend behavior for SalesOrder
+{
+
+  action ( authorization : update , features : instance ) zz_use_coupon
+    parameter Zhb_SLS_ASSIGNcouponTOSOP result [0..1] $self;
+
+  field(readonly) zz_coupon_id_sdh, zz_coupon_uuid_sdh;
+
+  side effects {
+    action zz_use_coupon affects entity _Item, entity _PricingElement;
+    //action zz_use_gift_card affects field *, entity _Item, entity _PricingElement;
+  }
+
+}

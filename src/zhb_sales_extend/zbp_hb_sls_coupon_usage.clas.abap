@@ -1,0 +1,5 @@
+CLASS zbp_hb_sls_coupon_usage DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF r_salesordertp.
+ENDCLASS.
+
+CLASS zbp_hb_sls_coupon_usage IMPLEMENTATION.
+ENDCLASS.
